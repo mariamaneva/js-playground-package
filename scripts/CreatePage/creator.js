@@ -13,6 +13,7 @@ module.exports = ({ path: argsPath }) => {
       "..",
       "..",
       "..",
+      "..",
       "sections",
       argsPath
     );

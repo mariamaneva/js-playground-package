@@ -4,8 +4,15 @@ const util = require("util");
 const fs = require("fs");
 const chalk = require("chalk");
 
-const sectionsPath = p.join(__dirname, "..", "..", "..", "sections");
-const navFilePath = p.join(__dirname, "..", "..", "..", "nav.generated.js");
+const sectionsPath = p.join(__dirname, "..", "..", "..", "..", "sections");
+const navFilePath = p.join(
+  __dirname,
+  "..",
+  "..",
+  "..",
+  "..",
+  "nav.generated.js"
+);
 
 let importStrings = "";
 

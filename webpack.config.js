@@ -10,8 +10,8 @@ module.exports = {
         use: "ts-loader",
         include: [
           path.resolve(__dirname),
-          path.resolve(__dirname, "../../nav.generated"),
-          path.join(__dirname, "../../sections/"),
+          path.resolve(__dirname, "../../../nav.generated"),
+          path.join(__dirname, "../../../sections/"),
         ],
         exclude: [path.join(__dirname, "node_modules")],
       },
