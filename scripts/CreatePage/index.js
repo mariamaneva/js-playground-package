@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const creatorFn = require("./creator");
 const yargs = require("yargs");
 const chalk = require("chalk");
@@ -26,3 +27,5 @@ yargs
   )
   .example(chalk.bold.greenBright("npm run update-nav"))
   .help().argv;
+
+require("./index.js")();
