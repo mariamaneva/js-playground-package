@@ -1,6 +1,6 @@
 {
   "name": "@mariamaneva/js-playground",
-  "version": "1.0.0",
+  "version": "0.9.3",
   "description": "A simple framework for testing js code snippets",
   "main": "index.ts",
   "publishConfig": {
