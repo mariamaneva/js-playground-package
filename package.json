@@ -1,0 +1,32 @@
+{
+  "name": "@mariamaneva/js-playground",
+  "version": "1.0.0",
+  "description": "A simple framework for testing js code snippets",
+  "main": "index.ts",
+  "publishConfig": {
+    "@mariamaneva:registry": "https://npm.pkg.github.com"
+  },
+  "scripts": {
+    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && webpack --mode production",
+    "watch": "webpack --watch",
+    "start": "SET NODE_OPTIONS=--openssl-legacy-provider && webpack serve --mode development",
+    "new-page": "node scripts/CreatePage new-page --path",
+    "update-nav": "node scripts/CreatePage update-nav",
+    "help": "node scripts/CreatePage --help",
+    "test": "exit 0"
+  },
+  "author": "Maria Maneva",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "directory-tree": "^3.5.1",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.1",
+    "ts-loader": "^9.4.2",
+    "typescript": "^5.0.4",
+    "webpack": "^5.37.0",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2",
+    "yargs": "^17.7.2"
+  }
+}

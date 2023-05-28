@@ -1,0 +1,18 @@
+{
+  "editor.fontSize": 16,
+  "editor.lineHeight": 23,
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.cursorBlinking": "smooth",
+  "editor.wordWrap": "on",
+  "javascript.autoClosingTags": true,
+  "javascript.format.enable": true,
+  "javascript.format.semicolons": "insert",
+  "editor.trimAutoWhitespace": true,
+  "workbench.colorTheme": "Atom One Dark",
+  "editor.fontFamily": "Consolas, monospace",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
