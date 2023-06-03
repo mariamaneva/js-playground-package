@@ -1,10 +1,10 @@
 {
   "name": "@mariamaneva/js-playground",
-  "version": "0.9.4",
+  "version": "0.9.5",
   "description": "A simple framework for testing js code snippets",
   "main": "index.ts",
   "bin": {
-    "playground": "./scripts/index.js"
+    "playground": "./scripts/CreatePage/index.js"
   },
   "publishConfig": {
     "@mariamaneva:registry": "https://npm.pkg.github.com"

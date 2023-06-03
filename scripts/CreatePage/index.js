@@ -28,4 +28,4 @@ yargs
   .example(chalk.bold.greenBright("npm run update-nav"))
   .help().argv;
 
-require("./index.js")();
+require("./../../index")();
