@@ -3,9 +3,6 @@
   "version": "0.9.7",
   "description": "A simple framework for testing js code snippets",
   "main": "index.ts",
-  "publishConfig": {
-    "@mariamaneva:registry": "https://npm.pkg.github.com"
-  },
   "scripts": {
     "build": "SET NODE_OPTIONS=--openssl-legacy-provider && webpack --mode production",
     "watch": "webpack --watch",
