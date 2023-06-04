@@ -1,5 +1,7 @@
 # Description
 
+![JS Playground](demo.png)
+
 This is a simple JS/TS code playground framework that I created in order to test code snippets, play Advent of Code, etc.
 
 All the playground files are displayed in a sidebar explorer. To test the output you can use both the DOM and Devtools console.
