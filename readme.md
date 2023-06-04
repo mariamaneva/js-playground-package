@@ -2,9 +2,9 @@
 
 ![JS Playground](demo.png)
 
-This is a simple JS/TS code playground framework that I created in order to test code snippets, play Advent of Code, etc.
+This is a simple JS/TS code playground framework that I created in order to test code snippets, play Advent of Code, etc a while ago. As my original project got larger, I decided to encapsulate the code-running logic in a package.
 
-All the playground files are displayed in a sidebar explorer. To test the output you can use both the DOM and Devtools console.
+All the playground files are listed in a clickable sidebar explorer. Nesting is possible too. To test the output you can use both the DOM and Devtools console.
 
 You can see the updated output after each save as well.
 
@@ -51,8 +51,21 @@ npm run new-page --path <your_page_name>.ts
 npm start
 ```
 
-5.  Open **`_your_page_name_`** file from the sections folder and start playing around.
+5.  Open **`<your_page_name>.js`** file from the **`sections`** folder and add your code where the `// code` comment is.
 
-Repeat step 3 and re-run the project every time you need a new playground file.
+<br/>
+<br/>
+
+
+### Adding a new page
+<br/>
+
+Repeat **step 3** and re-run the project every time you need a new playground file.
+
+<br/>
+
+
+### Updating the sidebar explorer
+<br/>
 
 If you deleted any files from the sections folder, run **`npm run update-nav`** and re-start the project to update the sidebar explorer
