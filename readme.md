@@ -1,6 +1,6 @@
 # Description
 
-![JS Playground](demo.png)
+![JS Playground](https://raw.githubusercontent.com/mariamaneva/js-playground-package/main/demo.png)
 
 This is a simple JS/TS code playground framework that I created in order to test code snippets, play Advent of Code, etc a while ago. As my original project got larger, I decided to encapsulate the code-running logic in a package.
 
