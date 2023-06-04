@@ -51,7 +51,7 @@ npm run new-page --path <your_page_name>.ts
 npm start
 ```
 
-5.  Open **`<your_page_name>.js`** file from the **`sections`** folder and add your code where the `// code` comment is.
+5.  Open **`<your_page_name>.js`** file from the **`sections`** folder and add your code where the `// code` comment is. As you keep updating and saving you can monitor your output in the respective page within the browser.
 
 <br/>
 <br/>
