@@ -2,6 +2,7 @@ const HTMLWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
 module.exports = {
+  mode: 'development',
   entry: "./index.ts",
   module: {
     rules: [
@@ -36,15 +37,20 @@ module.exports = {
     }),
   ],
   devServer: {
-    contentBase: path.join(__dirname),
-    publicPath: "/",
+    static: path.join(__dirname),
+    devMiddleware: {
+      publicPath: "/",
+    },
     compress: true,
     host: "localhost",
     port: 3000,
     open: true,
     hot: true,
     historyApiFallback: true,
-    inline: true,
+    client: {
+      overlay: false,
+      logging: 'error',
+    }
   },
   output: {
     path: path.join(__dirname, "build"),
