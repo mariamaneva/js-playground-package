@@ -13,7 +13,10 @@ module.exports = {
           path.resolve(__dirname),
           path.resolve(__dirname, "../../../"),
         ],
-        exclude: [path.join(__dirname, "node_modules")],
+        exclude: [
+          path.join(__dirname, "node_modules"),
+          path.join(__dirname, "../../../node_modules"),
+        ],
       },
       {
         test: /\.html$/,
