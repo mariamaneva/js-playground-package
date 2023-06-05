@@ -10,13 +10,10 @@ module.exports = {
         test: /\.(js|ts)$/,
         use: "ts-loader",
         include: [
-          path.resolve(__dirname),
-          path.resolve(__dirname, "../../../"),
+          __dirname,
+          path.join(__dirname, "../../../"),
         ],
-        exclude: [
-          path.join(__dirname, "node_modules"),
-          path.join(__dirname, "../../../node_modules"),
-        ],
+        exclude: [path.join(__dirname, "node_modules")],
       },
       {
         test: /\.html$/,
