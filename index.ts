@@ -43,7 +43,7 @@ const handleMenuClick = (event: MouseEvent) => {
   const target = event.target as HTMLAnchorElement;
 
   event.preventDefault();
-  const isAParent = target.href.split("#").length > 1;
+  const isAParent = target.href.startsWith("#");
   if (!isAParent) {
     history.pushState({}, null, target.id);
     const popStateEvent = new PopStateEvent("popstate", null);
@@ -69,8 +69,13 @@ export const createMenuItem = (info: NavConfigItem) => {
 };
 
 const createNavSubsection = (id: string) => {
+  const url = window.location.pathname.replace("/", '')
   const container = document.createElement("div");
   container.classList.add("collapse");
+  // persist open menu
+  if(url.startsWith(id)) {
+    container.classList.add("show")
+  }
   container.id = id;
   container.style.paddingLeft = "20px";
   return container;
