@@ -1,12 +1,12 @@
 {
   "name": "@mariamaneva/js-playground",
-  "version": "0.9.14",
+  "version": "0.9.15",
   "description": "A simple framework for testing js code snippets",
   "main": "index.ts",
   "scripts": {
-    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && webpack --mode production",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider && webpack --mode production",
     "watch": "webpack --watch",
-    "start": "SET NODE_OPTIONS=--openssl-legacy-provider && webpack serve",
+    "start": "set NODE_OPTIONS=--openssl-legacy-provider && webpack serve",
     "new-page": "node scripts/CreatePage new-page --path",
     "update-nav": "node scripts/CreatePage update-nav",
     "help": "node scripts/CreatePage --help",

@@ -21,9 +21,9 @@ const nodeCallback = (item, _path) => {
   const baseName = p.parse(path).name;
   const relativePath = path.replace(sectionsPath, "");
   const namespace = relativePath.replace(/\.(js|ts)$/g, "");
-  const codeNamespace = namespace.split("\\").join("_");
+  const codeNamespace = namespace.split(/[\\\/]/).filter(Boolean).join("_");
 
-  item.id = namespace.split("\\").join("");
+  item.id = namespace.split(/[\\\/]/).join("");
   item.name = baseName.replaceAll("_", " ");
   // if it's a file
   if (!!p.extname(path)) {
