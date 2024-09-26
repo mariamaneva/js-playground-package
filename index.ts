@@ -1,4 +1,5 @@
 import routes from "./../../../nav.generated";
+import { NavConfigItem } from "./types";
 
 const findSectionById = (sections: NavConfigItem[], id: string) => {
   for (const section of sections) {
