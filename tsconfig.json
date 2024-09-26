@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
     "outDir": "./dist/",
-    "module": "es6",
+    "module": "NodeNext",
     "target": "es6",
     "allowJs": true,
     "checkJs": false,
-    "moduleResolution": "node16"
+    "moduleResolution": "NodeNext"
   }
 }
